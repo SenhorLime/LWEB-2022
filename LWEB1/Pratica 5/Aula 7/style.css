@@ -1,0 +1,12 @@
+a {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover{
+    color: red;
+    background: yellow;
+}

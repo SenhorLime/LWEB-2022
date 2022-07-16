@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CSS</title>
+        <style>
+            .q1 {
+                position: absolute;
+                width: 140px;
+                height: 130px;
+                background-color: green;
+                cursor: wait;
+            }
+
+            .q2 {
+                position: absolute;
+                width: 140px;
+                height: 130px;
+                background-color: blue;
+                color: white;
+                z-index: 2;
+            }
+
+            .q4 {
+                position: fixed;
+                background-color: yellow;
+                width: 250px;
+                height: 400px;
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <span class="q1">Camada 1</span>
+        <span class="q2 " style="left: 50px; top: 58px;">Camada 2</span>
+        <span class=" q2" style=" left: 100px; top: 100px; visibility:hidden">Camada 3</span>
+
+        <span class="q4" style=" right: 30px; top: 10px;">
+            <p style="font-size: 30px; float: left; margin: 10px">Logo</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus vitae animi, esse quas doloremque dolores, ab sed iste maxime nisi corporis eligendi? 
+            Ex debitis facilis blanditiis quaerat dolor, nemo necessitatibus. 
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Blanditiis eum culpa itaque praesentium perspiciatis sapiente architecto fugit, inventore deleniti nam accusamus veritatis recusandae quo ea ipsum quaerat. Iusto, esse maiores!</p>
+        </span>
+    </body>
+</html>
