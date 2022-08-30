@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Preincrementando e Posincrementando</title>
+    <style>
+      html {
+        font-family: "JetBrains Mono";
+      }
+    </style>
+    <script>
+      // Declaracao e inicializacao de variaveis
+      var c;
+      c = 5;
+
+      document.writeln("<h3>Postincrementing</h3>");
+      document.writeln("<p>" + c); // Exibe 5
+      // Exibe 5 e entao incrementa
+      document.writeln("" + c++);
+      document.writeln("" + c + "</p>"); // Exibe 6
+
+      c = 5;
+
+      document.writeln("<h3>Preincrementing</h3>");
+      document.writeln("<p>" + c); // Exibe 5
+      // Incrementa e entao exibe 6
+      document.writeln("" + ++c);
+      document.writeln("" + c + "</p>"); // Exibe 6
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Script - Media da Turma</title>
+    <style>
+      html {
+        font-family: "JetBrains Mono";
+      }
+    </style>
+    <script>
+      // Declaracao de variaveis
+      var total; // Soma total
+      var gradeCounter; // Total de notas digitadas
+      var grade; // Nota digitada pelo usuario (tipo string)
+      var gradeValue; // Valor da nota (Converte a string para um inteiro)
+      var average; // Media de todas as notas
+
+      // Inicializacao das variaveis
+      total = 0;
+      gradeCounter = 0;
+
+      // Popup pedindo ao usuario uma nota
+      grade = window.prompt(
+        "Digite uma nota, para encerrar o programa digite um numero negativo"
+      );
+
+      // Converte a string para um inteiro
+      gradeValue = parseInt(grade);
+
+      // Inicio do while
+      while (gradeValue > -1) {
+        // Soma o valor total de todas as notas digitadas
+        total = total + gradeValue;
+
+        // Conta a quantidade de notas digitadas
+        gradeCounter = gradeCounter + 1;
+
+        // Outro popup pedindo dados para o usuario
+        grade = window.prompt(
+          "Digite uma nota, para encerrar o programa digite um numero negativo"
+        );
+
+        // Converte a string para um inteiro
+        gradeValue = parseInt(grade);
+      } // Fim do while
+
+      if (gradeCounter != 0) {
+        // Calcula a media
+        average = total / gradeCounter;
+
+        // Exibe o resultado da media de todas as notas
+        document.writeln("<h1>A media da classe é " + average + "</h1>");
+      } else {
+        // Se nenhum nota for digitada exibe a mensagem abaixo
+        document.writeln("<p>Não foi digitado nenhuma nota</p>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

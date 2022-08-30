@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Script - Media da Turma</title>
+    <style>
+      html {
+        font-family: "JetBrains Mono";
+      }
+    </style>
+    <script>
+      // Declaracao de variaveis
+      var total; // Soma total
+      var gradeCounter; // Numero de notas digitadas
+      var grade; // Nota inserida por um usuario (tipo string)
+      var gradeValue; // Valor da nota (Converte a string para um inteiro)
+      var average; // Media de todas as notas
+
+      // Inicializacao das variaveis
+      total = 0;
+      gradeCounter = 1;
+
+      // Inicio do while
+      while (gradeCounter <= 10 /* Repete 10 vezes */) {
+        // Mostra um popup para o usuario para receber a nota
+        grade = window.prompt("Enter a integer grade: ", "0");
+
+        // Converte a string para inteiro
+        gradeValue = parseInt(grade);
+
+        // Soma o total das notas
+        total = total + gradeValue;
+
+        // Aumenta a contagem total de notas digitadas
+        gradeCounter = gradeCounter + 1;
+      } // Fim do while
+
+      // Calcula a media total das notas
+      average = total / 10;
+
+      // Exibe o resultado final
+      document.writeln("<h1>Class average is " + average + "</h1>");
+    </script>
+  </head>
+  <body></body>
+</html>

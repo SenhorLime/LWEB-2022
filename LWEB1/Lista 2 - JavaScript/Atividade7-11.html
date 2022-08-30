@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Analise dos resultados de uma prova</title>
+    <style>
+      html {
+        font-family: "JetBrains Mono";
+      }
+    </style>
+    <script>
+      // Declaracao de variaveis
+      var passes = 0; // Numero de aprovados
+      var failures = 0; // Numero de reprovados
+      var student = 1; // Contagem de estudantes
+      var result; // Resultado final
+
+      // Inicio do while
+      while (student <= 10 /* Repete 10 vezes*/) {
+        // Mostra um popup pedindo ao usuario dados
+        result = window.prompt("Enter result (1=pass, 2=fail)");
+
+        if (result == 1) {
+          // Se o resulta for igual a 1, a variavel aprovado e atualizada
+          passes++;
+        } else {
+          // Senao a resprovado e atualizada
+          failures++;
+        }
+
+        student++; // Aumenta a contagem de alunos
+      }
+
+      // Exibe o resultado final
+      document.writeln("<h1>Examination Results</h1>");
+      document.writeln(
+        "<p>Passed: " + passes + "; Failed: " + failures + "</p>"
+      );
+
+      if (passes > 8) {
+        // Se o numero de aprovado for maior que 8 exibe a mensagem abaixo
+        document.writeln("<p>Bonus to intructor!</p>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
