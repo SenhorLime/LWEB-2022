@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculando Juros Compostos</title>
+    <style>
+      table {
+        width: 300px;
+        border-collapse: collapse;
+        background-color: lightblue;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        padding: 4px;
+      }
+
+      th {
+        text-align: center;
+        color: white;
+      }
+
+      tr.oddrow {
+        background-color: white;
+      }
+    </style>
+    <script>
+      // Declaracao e inicializacao de varaiveis
+      var amount;
+      var principal = 1000.0;
+      var rate = 0.05;
+
+      // Criacao da tabela
+      document.writeln("<table>");
+      document.writeln("<caption>Calculating Compound Interest</caption>");
+      document.writeln("<thead><tr><th>Year</th>");
+      document.writeln("<th>Amount on deposit</th>");
+      document.writeln("<tr></thead><tbody>");
+
+      // Inicio do for
+      for (var year = 1; year <= 10; ++year) {
+        // Atribuicao de valor e realizacao de calculos
+        amount = principal * Math.pow(1.0 + rate, year);
+
+        if (year % 2 !== 0) {
+          document.writeln(
+            "<tr class='oddrow'><td>" +
+              year +
+              "</td><td>" +
+              amount.toFixed(2) +
+              "</td></tr>"
+          );
+        } else {
+          document.writeln(
+            "<tr><td>" + year + "</td><td>" + amount.toFixed(2) + "</td></tr>"
+          );
+        }
+      }// Fim do par
+
+      // Fim da tabela
+      document.writeln("</tbody></table>");
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Loop que exibe os numeros ate o final do contador</title>
+    <script>
+      // Inicio do para
+      for (var count = 1; count <= 10; count++) {
+        if (count == 5) { // Quando o count chega a 5 ele encerrar a repeticao
+          break;
+        }
+        // Exibicao dos numero dentro da repeticao
+        document.writeln(count + " ");
+      } // Fim do para
+
+      // Exibicao do numero que finalizou a repeticao
+      document.writeln("<p>Broke out of loop at count = " + count + "</p>");
+    </script>
+  </head>
+  <body></body>
+</html>

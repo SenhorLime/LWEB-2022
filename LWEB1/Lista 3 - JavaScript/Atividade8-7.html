@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trocando de o formato das listas no HTML 5</title>
+    <script>
+      // Declaracao e inicializacao de variaveis
+      var choice;
+      var startTag;
+      var endTag;
+      var validInput = true;
+      var listType;
+
+      // Input do usuario
+      choice = window.prompt(
+        "Select a list style: \n" + "1 - Numbered, 2 - Lettered, 3 - Roman Numbered", "1" );
+
+      // Converte a string para um inteiro
+      choice = parseInt(choice);
+
+      // Inicio do para
+      switch (choice) {
+        case 1:
+          startTag = "<ol>";
+          endTag = "</ol>";
+          listType = "<h1>Numbered List</h1>";
+          break;
+
+        case 2:
+          startTag = "<ol style='list-style-type: upper-alpha'>";
+          endTag = "</ol>";
+          listType = "<h1>Lettered List</h1>";
+          break;
+
+        case 3:
+          startTag = "<ol style='list-style-type: upper-roman'>";
+          endTag = "</ol>";
+          listType = "<h1>Roman Numbered List</h1>";
+          break;
+
+        default:
+          validInput = false;
+          break;
+      } // Fim do escolha
+
+      // Exibicao das lista
+      if (validInput === true) { // Se o input for verdadeira exibe
+        document.writeln(listType + startTag);
+        for (var i = 1; i <= 3; ++i) {
+          document.writeln("<li>List item" + i + "</li>");
+        }
+        document.writeln(endTag);
+      } else { // Senao exibe que foi invalido
+        document.writeln("Invalid choice: " + choice);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
