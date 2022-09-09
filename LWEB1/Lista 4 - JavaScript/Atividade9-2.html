@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+    <script>
+      document.writeln("<h1>Square the numbers from 1 to 10 </h1>");
+
+      for (var x = 1; x <= 10; x++) {
+        document.writeln("<p>The square of " + x + " is " + square(x) + "</p>");
+      }
+
+      function square(y) {
+        return y * y;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
