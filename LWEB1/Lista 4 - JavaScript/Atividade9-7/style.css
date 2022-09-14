@@ -2,31 +2,30 @@
 
 html, body {
   font-family: 'Inter', sans-serif;
+  background-color: rgb(199, 196, 196);
+}
+
+p.red {
+  color: red;
 }
 
 img {
-  margin-right: 10px;
+  margin: 3px;
+  padding: 2px;
 }
 
-table {
-  width: 200px;
-  border-collapse: collapse;
-  background-color: #9FFB62;
+div {
+  border: 5px ridge royalblue;
+  padding: 10px;
+  width: 175px;
+  margin-bottom: 10px;
 }
 
-table, td, th {
-  border: 1px solid black;
-  padding: 4px;
-  margin-top: 20px;
+.point {
+  margin: 0px;
 }
 
-th {
-  text-align: left;
-  color: white;
-  background-color: #387A0B;
-}
-
-#rollButton {
+.gameButton {
   margin: 0.5%;
   font-size: 1em;
   font-weight: 500;
@@ -38,6 +37,6 @@ th {
   border-radius: 25px;
 }
 
-#rollButton:hover {
+.gameButton:hover {
   background-color: #4ca411;
 }

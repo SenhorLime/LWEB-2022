@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    p {
+      margin: 0px;
+    }
+    p.space{
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    // Declaração e inicialização de variaveis
+    var output;
+    var x = 1;
+
+    // Inicio da função
+    function start(){
+      // Declaração de variavel
+      var x = 5;
+
+      output = "<p>local x in start is " + x + "</p>";
+
+      functionA();
+      functionB();
+      functionA();
+      functionB();
+
+      output += "<p class='space'> local x in functionA is " + x + "</p>";
+      x++;
+      document.getElementById("results").innerHTML = output;
+    }// Fim da função
+
+    // Inicio da função
+    function functionA(){
+      var x = 25;
+
+      output += "<p class='space'>local x in functionA  is " + x + " after entering functionA</p>";
+      x++;
+      output += "<p>local x in functionA is " + x + " before exiting functionA</p>";
+    }// Fim da função
+
+    // Inicio da função
+    function functionB(){
+      output += "<p class='space'> global variable  x is " + x + " on entering functionB";
+      x *= 10;
+      output += "<p> global variable x is " + x + " on exiting functionB";
+    }// Fim da função
+
+    window.addEventListener("load", start, false);
+  </script>
+</head>
+<body>
+  <div id="results"></div>
+</body>
+</html>

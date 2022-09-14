@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <audio id="diceRolling" preload="auto">
+      <source src="diceAssets/diceAudio.mp3" type="audio/mp3"/>
+    </audio>
+
+    <p>
+      <a href="crapsRules.html">Click here for a short video explaning the basic Craps rules</a>
+    </p>
+
+    <div id="pointDiv">
+      <p class="point">Point is:</p>
+      <img id="pointDice1" src="diceAssets/dice1.png" alt="Dice 1 of point value"/>
+      <img id="pointDice2" src="diceAssets/dice2.png" alt="Dice 2 of point value"/>
+    </div>
+
+    <div class="rollDiv">
+      <img id="rollDice1" src="diceAssets/dice1.png" alt="Dice 1 of point value"/>
+      <img id="rollDice2" src="diceAssets/dice2.png" alt="Dice 2 of point value"/>
+    </div>
+
+    <form action="#">
+      <input class="gameButton" id="play" type="button" value="Play">
+      <input class="gameButton" id="roll" type="button" value="Roll">
+    </form>
+
+    <p id="messages" class="red">Click play to start the game</p>
+  </body>
+
+</html>
