@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@500&display=swap" rel="stylesheet">
+    <style>
+      html,
+      body {
+        font-family: 'Gantari', sans-serif;
+        font-size: large;
+      }
+
+      #num1,
+      #num2 {
+        text-align: center;
+        width: 35px;
+        padding: 7px 10px;
+        border-radius: 15px;
+        border: 0;
+        background-color: rgb(230, 221, 221);
+      }
+
+      #sendInput {
+        padding: 7px 10px;
+        border-radius: 15px;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" name="Text" id="num1">
+      <input type="text" name="Text" id="num2">
+      <button id="sendInput" onclick="showResult()">Enviar</button>
+    </div>
+
+    <script>
+      function showResult() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+
+        console.log("A soma dos numeros e: ", num1 + num2);
+        console.log("\nA subtracao dos numeros e: ", num2 - num2);
+        console.log("\nA divisao dos numeros e: ", num2 / num2);
+        console.log("\nA multiplicacao dos numeros e: ", num2 * num2);
+      }
+    </script>
+  </body>
 </html>

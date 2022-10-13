@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@500&display=swap" rel="stylesheet">
+    <style>
+      html,
+      body {
+        font-family: 'Gantari', sans-serif;
+        font-size: large;
+      }
+
+      #month {
+        text-align: center;
+        width: 35px;
+        padding: 7px 10px;
+        border-radius: 15px;
+        border: 0;
+        background-color: rgb(230, 221, 221);
+      }
+
+      #sendBTN {
+        padding: 7px 10px;
+        border-radius: 15px;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="Text" id="month">
+    <button id="sendBTN" onclick="getMonth()">Envie</button>
+
+    <script>
+      function getMonth() {
+        let month = document.getElementById("month").value;
+
+        function showMonth() {
+          switch (month) {
+            case "1": return "Janeiro"; break;
+
+            case "2": return "Fevereiro"; break;
+
+            case "3": return "Março"; break;
+
+            case "4": return "Abril"; break;
+ 
+            case "5": return "Maio"; break;
+
+            case "6": return "Junho"; break;
+
+            case "7": return "Julho"; break;
+
+            case "8": return "Agosto"; break;
+
+            case "9": return "Setembro"; break;
+
+            case "10": return "Outubro"; break;
+
+            case "11": return "Novembro"; break;
+
+            case "12": return "Dezembro"; break;
+
+            default: return "Mes invalido. Tente novamente!";
+          }
+        }
+        console.log(showMonth(month));
+      }
+    </script>
+  </body>
+</html>

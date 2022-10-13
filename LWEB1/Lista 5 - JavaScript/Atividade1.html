@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@500&display=swap" rel="stylesheet">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-      html, body {
-        font-family: 'Poppins', sans-serif;
+      html,
+      body {
+        font-family: 'Gantari', sans-serif;
         font-size: large;
       }
 
-      #textArea{
+      #textArea {
         padding: 7px 10px;
         border-radius: 15px;
         border: 0;
@@ -25,16 +25,16 @@
         border-radius: 15px;
         border: 0;
       }
-      </style> 
+    </style>
   </head>
   <body>
     <input type="text" name="Text" id="textArea">
-    <button id="sendBTN" onclick="showInput()">Clique aqui</button>
+    <button id="sendBTN" onclick="getInput()">Clique aqui</button>
 
     <p id="inputResult"></p>
 
     <script>
-      function showInput() {
+      function getInput() {
         let input = document.getElementById("textArea").value;
 
         document.getElementById("inputResult").innerHTML = "Olá, " + input + "!";

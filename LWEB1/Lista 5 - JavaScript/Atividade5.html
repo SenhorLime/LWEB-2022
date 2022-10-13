@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@500&display=swap" rel="stylesheet">
+    <style>
+      html,
+      body {
+        font-family: 'Gantari', sans-serif;
+        font-size: large;
+      }
+
+      #num1, #num2 {
+        text-align: center;
+        width: 35px;
+        padding: 7px 10px;
+        border-radius: 15px;
+        border: 0;
+        background-color: rgb(230, 221, 221);
+      }
+
+      #sendBTN {
+        padding: 7px 10px;
+        border-radius: 15px;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="Text" id="num1">
+    <input type="text" name="Text" id="num2">
+    <button id="sendBTN" onclick="getValue()">Envie</button>
+
+    <script>
+      function getValue() {
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+
+        function higherOrLess() {
+          if (num1 > num2) {
+            return "O primeiro numero é maior que o segundo";
+          } else if (num2 > num1) {
+            return "O segundo numero é maior que o primeiro";
+          } else if (num1 == num2) {
+            return "Os numeros digitados são iguais";
+
+          }
+        }
+        console.log(higherOrLess(num1));
+      }
+    </script>
+  </body>
+</html>
