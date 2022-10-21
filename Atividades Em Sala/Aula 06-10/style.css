@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 html {
   font-family: 'Gantari', sans-serif;
 }
@@ -72,7 +72,7 @@ body {
   background: #e6e9ef;
   left: 4%;
   padding: 40px 0;
-  font-family: 'Gantari', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   color: #4c4f69;
   font-size: 50px;
   font-weight: 800;
@@ -103,7 +103,7 @@ body {
   background: #313244;
   left: 4%;
   padding: 40px 0;
-  font-family: 'Gantari', sans-serif;
+  font-family: 'Ubuntu Mono', monospace;
   color: #cdd6f4;
   font-size: 50px;
   font-weight: 800;
