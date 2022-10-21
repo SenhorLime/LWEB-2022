@@ -1,6 +1,8 @@
 let [millisecond, seconds, minutes, hours] = [0, 0, 0, 0];
 let timerLocal = document.querySelector('.showTimer');
 let int = null;
+let toggleBTN = document.querySelector('.toggleBTN');
+let body = document.querySelector('body');
 
 document.getElementById('startButton').addEventListener('click', () => {
   if (int !== null) {
@@ -47,3 +49,6 @@ function displayTimer() {
   timerLocal.innerHTML = ` ${h} : ${m} : ${s} : ${ms}`;
 }
 
+toggleBTN.onclick = function(){
+  body.classList.toggle('light');
+}

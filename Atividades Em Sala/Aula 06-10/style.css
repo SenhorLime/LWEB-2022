@@ -1,25 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Gantari&display=swap');
 
-html{
+html {
   font-family: 'Gantari', sans-serif;
 }
 
-*:after{
+*:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
-background: #181825;
+body {
+  background: #181825;
 }
 
-.container{
+.toggleBTN {
+  background-color: #eff1f5;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.container {
   background-color: #313244;
   width: 40%;
   min-width: 500px;
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   padding: 20px 0;
@@ -27,7 +38,66 @@ background: #181825;
   border-radius: 15px;
 }
 
-.showTimer{
+.light .toggleBTN {
+  background-color: #1e1e2e;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.light {
+  background-color: #bcc0cc;
+}
+
+.light .container {
+  background-color: #dce0e8;
+  width: 40%;
+  min-width: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 20px 0;
+  padding-bottom: 50px;
+  border-radius: 15px;
+}
+
+.light .showTimer {
+  position: relative;
+  width: 92%;
+  background: #e6e9ef;
+  left: 4%;
+  padding: 40px 0;
+  font-family: 'Gantari', sans-serif;
+  color: #4c4f69;
+  font-size: 50px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #acb0be;
+}
+
+.light .controlButtons button {
+  width: 120px;
+  height: 45px;
+  color: #5c5f77;
+  border: none;
+  font-family: 'Gantari', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.showTimer {
   position: relative;
   width: 92%;
   background: #313244;
@@ -44,18 +114,19 @@ background: #181825;
   box-shadow: 0 0 20px #1e1e2e;
 }
 
-.controlButtons{
+.controlButtons {
   width: 90%;
   margin: 60px auto 0 auto;
   display: flex;
   justify-content: space-around;
 }
-.controlButtons button{
+
+.controlButtons button {
   width: 120px;
   height: 45px;
   color: #45475a;
   border: none;
-  font-family: 'Gantari',sans-serif;
+  font-family: 'Gantari', sans-serif;
   font-size: 18px;
   font-weight: 600;
   border-radius: 25px;
@@ -74,4 +145,3 @@ background: #181825;
 #pauseButton {
   background-color: #74c7ec;
 }
-
