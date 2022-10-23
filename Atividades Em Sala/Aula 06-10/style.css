@@ -18,7 +18,8 @@ html {
 }
 
 .toggleBTN {
-    background-color: #eff1f5;
+    background: url(assets/lightMode.png);
+    background-size: 30px;
     position: fixed;
     width: 30px;
     height: 30px;
@@ -26,7 +27,7 @@ html {
     right: 20px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.7s ease-in;
+    transition: 2s ease-out;
 }
 
 .container {
@@ -88,7 +89,8 @@ html {
 }
 
 .light .toggleBTN {
-    background-color: #1e1e2e;
+    background: url(assets/darkMode.png);
+    background-size: 30px;
     position: fixed;
     width: 30px;
     height: 30px;
@@ -96,7 +98,7 @@ html {
     right: 20px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.7s ease-in-out;
+    transition: 2s ease-out;
 }
 
 .light .container {
